@@ -1,0 +1,2 @@
+# Всё остальное - stdlib: urllib, sqlite3, json, statistics, hashlib.
+PyYAML>=6.0

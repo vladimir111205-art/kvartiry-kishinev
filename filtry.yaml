@@ -1,0 +1,79 @@
+## Единственный файл, который правит владелец.
+##
+## Новый фильтр по существующему полю - одна строка здесь, ноль правок кода.
+## Опечатка в имени поля или оператора роняет запуск с внятной ошибкой,
+## а не превращает фильтр в «пропускай всё».
+##
+## Поля карточки:
+##   istochnik vneshniy_id url zagolovok sdelka gorod sektor ulica
+##   cena valyuta cena_eur cena_eur_za_m2 prezhnyaya_cena_eur
+##   komnat ploshad_m2 etazh etazhnost tip_doma sostoyanie fond
+##   prodavec avtor_login opisanie foto podnyato_at otklonenie_ot_rynka
+##   dannye_nadezhny  <- 1, если цифрам объявления можно верить
+##
+## Операторы:
+##   ravno ne_ravno v_spiske ne_v_spiske ne_menshe ne_bolshe mezhdu
+##   soderzhit ne_soderzhit est net ne_ravno_polyu
+##
+## Секторы: centr botanika chekany ryshkanovka buyukany telecentr
+##          staraya_pochta skulyanka aeroport
+
+versiya: 1
+
+sbor:
+  gorod: kishinev
+  # Аренду собираем не для уведомлений, а чтобы позже считать доходность:
+  # цена покупки к ставке аренды по тому же сектору и комнатности.
+  sdelki: [prodazha, arenda]
+  # Шире профиля нарочно: медиана €/м² считается по всему рынку,
+  # а не по узкой выборке под папин фильтр.
+  komnat: [1, 2, 3, 4]
+
+rynok:
+  okno_dney: 90
+  # Меньше 15 объектов в выборке - медиану не показываем и метку не ставим.
+  # Лучше промолчать, чем соврать цифрой.
+  minimum_obektov: 15
+  # На сколько процентов ниже медианы = «дешевле рынка».
+  # Замер по живому рынку Кишинёва 17.09.2026 (13 789 объектов с оценкой):
+  #   порог 10% -> 35% рынка    порог 25% -> 12% рынка
+  #   порог 15% -> 26% рынка    порог 30% ->  7% рынка
+  #   порог 20% -> 18% рынка    порог 40% ->  2% рынка
+  # На 15% метка попадала бы на каждый четвёртый объект и ничего не значила.
+  porog_deshevle: 25
+
+profili:
+  - imya: "двушки папе"
+    aktiven: true
+    poluchatel: papa
+    istochniki: [999md]
+    pravila:
+      - {pole: sdelka,     op: ravno,          znachenie: prodazha}
+      - {pole: gorod,      op: ravno,          znachenie: kishinev}
+      # Продавцы ошибаются в площади: 42,46 м² уезжает в поле как 4246, и
+      # объект выглядит «дешевле рынка на 99%». Таких 0,2%, но они встают
+      # первыми в списке. Правило держит их подальше от папы.
+      - {pole: dannye_nadezhny, op: ravno,     znachenie: 1}
+      - {pole: komnat,     op: ravno,          znachenie: 2}
+      - {pole: cena_eur,   op: mezhdu,         znachenie: [35000, 90000]}
+      - {pole: sektor,     op: v_spiske,       znachenie: [centr, botanika, chekany, ryshkanovka]}
+      - {pole: ploshad_m2, op: ne_menshe,      znachenie: 50}
+      - {pole: etazh,      op: mezhdu,         znachenie: [2, 8]}
+      # Не последний этаж: крыша - главный скрытый расход.
+      - {pole: etazh,      op: ne_ravno_polyu, znachenie: etazhnost}
+    myagkie:
+      - {pole: otklonenie_ot_rynka, op: ne_menshe, znachenie: 15, metka: "дешевле рынка"}
+      - {pole: prodavec,            op: ravno,     znachenie: sobstvennik, metka: "собственник"}
+
+  # Тестовый профиль на время настройки. Выключен: папа подключён 17.09.2026,
+  # карточки идут ему. Чат Владимира остаётся только под технические алерты
+  # о поломках - папе такие сообщения не нужны, он их не поймёт и испугается.
+  - imya: "проверка владимиру"
+    aktiven: false
+    poluchatel: vladimir
+    istochniki: [999md]
+    pravila:
+      - {pole: sdelka,   op: ravno,    znachenie: prodazha}
+      - {pole: gorod,    op: ravno,    znachenie: kishinev}
+      - {pole: dannye_nadezhny, op: ravno, znachenie: 1}
+      - {pole: cena_eur, op: mezhdu,   znachenie: [20000, 150000]}

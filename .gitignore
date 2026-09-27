@@ -1,0 +1,16 @@
+# Рабочая БД: в git идёт только текстовый снимок state/dump.sql
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Окружение и секреты
+.venv/
+.env
+*.local.json
+nastroyki_bota.json
+
+__pycache__/
+*.pyc
+.pytest_cache/

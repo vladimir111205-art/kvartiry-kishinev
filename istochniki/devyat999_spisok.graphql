@@ -1,0 +1,48 @@
+# ТОЩИЙ запрос списка: полный обход рынка без описаний и фотографий.
+#
+# Зачем отдельный запрос. Отец попросил узнавать первым и о новом объекте, и о
+# смене цены. Сортировки «по изменению» у 999.md нет, только по дате подъёма, а
+# продавец может снизить цену не поднимая объявление - значит ловит только
+# полный обход всего рынка каждый прогон.
+#
+# Описание и список фото - это ~90% веса ответа. Без них весь рынок Кишинёва
+# (23 000 карточек, 47 страниц по 500) выкачивается за 12 секунд в 4 потока,
+# с ними - за полторы минуты и 150 МБ. Для медиан и для событий описание и фото
+# не нужны: их дотягивает `devyat999_odin.graphql` точечно и только по тем
+# карточкам, которые реально уходят в Telegram.
+#
+# Побочная выгода: описания чужих объявлений (а в них продавцы пишут свои
+# телефоны) теперь попадают к нам по единицам за прогон, а не по 23 000.
+
+query SearchAds($input: Ads_SearchInput!, $locale: Common_Locale) {
+  searchAds(input: $input) {
+    count
+    ads {
+      id
+      title
+      reseted(
+        input: {format: "2006-01-02 15:04", locale: $locale, timezone: "Europe/Chisinau", getDiff: false}
+      )
+
+      offerType:   feature(id: 1)    { value }
+      price:       feature(id: 2)    { value }
+      pricePerM2:  feature(id: 1385) { value }
+      oldPrice:    feature(id: 1640) { value }
+      author:      feature(id: 795)  { value }
+
+      rooms:       feature(id: 241)  { value }
+      area:        feature(id: 244)  { value }
+      floor:       feature(id: 248)  { value }
+      floors:      feature(id: 249)  { value }
+      buildType:   feature(id: 247)  { value }
+      condition:   feature(id: 253)  { value }
+      housingFund: feature(id: 852)  { value }
+
+      city:        feature(id: 8)    { value }
+      district:    feature(id: 9)    { value }
+      street:      feature(id: 10)   { value }
+
+      owner { login }
+    }
+  }
+}

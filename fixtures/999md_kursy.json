@@ -1,0 +1,59 @@
+{
+ "data": {
+  "getMainCurrenciesRates": {
+   "mainCurrenciesRates": [
+    {
+     "key": "RATES_MAIN_CURRENCY_MDL",
+     "ratios": [
+      {
+       "key": "RATES_MAIN_CURRENCY_USD",
+       "value": 0.05736511
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_EUR",
+       "value": 0.049729224
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_MDL",
+       "value": 1
+      }
+     ]
+    },
+    {
+     "key": "RATES_MAIN_CURRENCY_USD",
+     "ratios": [
+      {
+       "key": "RATES_MAIN_CURRENCY_MDL",
+       "value": 17.4322
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_USD",
+       "value": 1
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_EUR",
+       "value": 0.8668898
+      }
+     ]
+    },
+    {
+     "key": "RATES_MAIN_CURRENCY_EUR",
+     "ratios": [
+      {
+       "key": "RATES_MAIN_CURRENCY_MDL",
+       "value": 20.1089
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_USD",
+       "value": 1.1535492
+      },
+      {
+       "key": "RATES_MAIN_CURRENCY_EUR",
+       "value": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

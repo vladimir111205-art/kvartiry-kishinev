@@ -1,0 +1,39 @@
+# Точечный запрос одного объявления по id. Нужен избранному: по объекту, который
+# папа отслеживает, важна скорость, и ждать, пока он всплывёт в списке, нельзя.
+#
+# Поля один в один со списочным запросом - сознательно. Разъедутся - избранное
+# начнёт видеть не ту же карточку, что общая лента, и сравнение цен соврёт.
+#
+# getAdsByIds требует авторизации, advert - нет. Проверено 17.09.2026.
+
+query Advert($id: String!, $locale: Common_Locale) {
+  advert(input: {id: $id}) {
+    id
+    title
+    reseted(
+      input: {format: "2006-01-02 15:04", locale: $locale, timezone: "Europe/Chisinau", getDiff: false}
+    )
+
+    offerType:   feature(id: 1)    { id type value }
+    price:       feature(id: 2)    { id type value }
+    pricePerM2:  feature(id: 1385) { id type value }
+    oldPrice:    feature(id: 1640) { id type value }
+    images:      feature(id: 14)   { id type value }
+    body:        feature(id: 13)   { id type value }
+    author:      feature(id: 795)  { id type value }
+
+    rooms:       feature(id: 241)  { id type value }
+    area:        feature(id: 244)  { id type value }
+    floor:       feature(id: 248)  { id type value }
+    floors:      feature(id: 249)  { id type value }
+    buildType:   feature(id: 247)  { id type value }
+    condition:   feature(id: 253)  { id type value }
+    housingFund: feature(id: 852)  { id type value }
+
+    city:        feature(id: 8)    { id type value }
+    district:    feature(id: 9)    { id type value }
+    street:      feature(id: 10)   { id type value }
+
+    owner { id login }
+  }
+}

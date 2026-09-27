@@ -1,0 +1,111 @@
+# Боевой прогон агента 19. Крутится в облаке GitHub - не зависит от того,
+# включён ли чей-либо компьютер.
+#
+# Почему цикл внутри запуска, а не cron раз в 20 минут. Замер 17-27.09.2026:
+# GitHub пропускал запуски по расписанию, вместо 45 в день выходило 3-5, с
+# разрывами по 3-4 часа днём. Для «узнавать первым» это провал. Поэтому один
+# запуск держит цикл 55 минут (верхушка ленты раз в минуту, весь рынок раз в
+# 20 минут), сохраняет базу и сам запускает следующий. Расписание только
+# будит цепочку утром и подхватывает её, если она где-то оборвалась.
+#
+# Репозиторий публичный: у публичных минуты Actions не ограничены. Поэтому в
+# git не кладём ничего из базы - она живёт только в кэше Actions.
+name: obhod
+
+on:
+  workflow_dispatch:
+    inputs:
+      rezhim:
+        description: >-
+          boy - реальная отправка. proba - источник и Telegram фиктивные (в
+          сеть и папе ничего не уходит), НО пишет карточки фикстуры в
+          настоящую базу кэша - только для проверки связки секретов
+        default: boy
+        type: choice
+        options: [boy, proba]
+  schedule:
+    # UTC. Будильник и страховка: если цепочка идёт, этот запуск ждёт в
+    # очереди и продолжает её. Вне 08:00-22:00 по Кишинёву run.py сразу выходит.
+    - cron: '7,37 5-19 * * *'
+
+concurrency:
+  group: obhod
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # суточная отметка активности (иначе GitHub выключит cron через 60 дней)
+  actions: write    # запустить следующее звено цепочки
+
+jobs:
+  progon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Зависимости
+        run: pip install -r requirements.txt
+
+      # База между запусками - только в кэше Actions (снаружи не видна).
+      # Промах кэша не катастрофа: холодный старт сам включает тихий режим.
+      - name: Восстановить базу из кэша
+        uses: actions/cache/restore@v4
+        with:
+          path: data
+          key: sostoyanie-${{ github.run_id }}
+          restore-keys: sostoyanie-
+
+      - name: Цикл 55 минут
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          PAPA_CHAT_ID: ${{ secrets.PAPA_CHAT_ID }}
+          VLADIMIR_CHAT_ID: ${{ secrets.VLADIMIR_CHAT_ID }}
+        run: python run.py --rezhim ${{ inputs.rezhim || 'boy' }} --cikl 55
+
+      - name: Сохранить базу в кэш
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data
+          key: sostoyanie-${{ github.run_id }}
+
+      # Раз в сутки одна строка с датой. Только дата, без данных.
+      - name: Отметка активности
+        if: always()
+        run: |
+          mkdir -p state
+          date -u +%Y-%m-%d > state/pulse.txt
+          git add state/pulse.txt
+          if ! git diff --cached --quiet; then
+            git config user.name "kvartiry-kishinev-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "Отметка активности $(date -u +%Y-%m-%d)"
+            git pull --rebase -q && git push -q || echo "отметка не ушла, не страшно"
+          fi
+
+      - name: Следующее звено цепочки
+        if: always() && (inputs.rezhim || 'boy') == 'boy'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CHAS=$(TZ=Europe/Chisinau date +%-H)
+          if [ "$CHAS" -ge 8 ] && [ "$CHAS" -lt 22 ]; then
+            gh workflow run obhod.yml -R "${{ github.repository }}" -f rezhim=boy
+          else
+            echo "Ночь по Кишинёву ($CHAS:00), цепочку не продолжаю"
+          fi
+
+      - name: Алерт при падении workflow
+        if: failure()
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          VLADIMIR_CHAT_ID: ${{ secrets.VLADIMIR_CHAT_ID }}
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -d chat_id="${VLADIMIR_CHAT_ID}" \
+            -d text="⚠️ Агент 19 (квартиры Кишинёв): звено цикла упало. Цепочка продолжится, но смотри Actions." \
+            > /dev/null || true

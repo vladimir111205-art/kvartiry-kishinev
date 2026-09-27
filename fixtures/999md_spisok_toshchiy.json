@@ -1,0 +1,5631 @@
+{
+ "data": {
+  "searchAds": {
+   "count": 20539,
+   "ads": [
+    {
+     "id": "102833072",
+     "title": "2-х комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 204900
+      }
+     },
+     "pricePerM2": {
+      "value": 2845
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 72
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "bd. Mircea cel Bătrân"
+     },
+     "owner": {
+      "login": "prodavec_5"
+     }
+    },
+    {
+     "id": "102486063",
+     "title": "1-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 700
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 57
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 951
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "bd. Decebal"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "103659715",
+     "title": "3-х комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 225000
+      }
+     },
+     "pricePerM2": {
+      "value": 1875
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 120
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 970
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Kомбинированный",
+       "value": 945
+      }
+     },
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "bd. Mircea cel Bătrân"
+     },
+     "owner": {
+      "login": "prodavec_39"
+     }
+    },
+    {
+     "id": "103346810",
+     "title": "2-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 64
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Nicolae Testemitanu"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "101679874",
+     "title": "3-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 4300
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 184
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "8",
+       "value": 921
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "8",
+       "value": 975
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Alexandr Pușkin"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "100989015",
+     "title": "2-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 70
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 909
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 971
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "ул. Алексей Матеевич"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "86974364",
+     "title": "3-х комнатная квартира,  Старая Почта,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 2500
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 165
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 970
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 948
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Старая Почта",
+       "value": 15670
+      }
+     },
+     "street": {
+      "value": "str-la Studenților"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "82974824",
+     "title": "3-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 3500
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 110
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 951
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "bd. Ştefan cel Mare şi Sfânt"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "83787535",
+     "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 919
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "-"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "77973681",
+     "title": "3-х комнатная квартира, 90 м², Центр, Кишинёв",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1200
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 90
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 979
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Romană"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "86187407",
+     "title": "2-х комнатная квартира, 82 м², Рышкановка, Кишинёв",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1200
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 82
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 965
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Alecu Russo"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "100601699",
+     "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1000
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 55
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 951
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Izmail;str. Ismail"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "88128937",
+     "title": "2-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1500
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 72
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 909
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Vasile Alecsandri"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "87514333",
+     "title": "2-х комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 80
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "13",
+       "value": 958
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "17",
+       "value": 1018
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Bogdan Voievod"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "101356463",
+     "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 70
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "пр-т Штефан чел Маре ши Сфынт"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "87651405",
+     "title": "2-х комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1000
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 65
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 1016
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "16",
+       "value": 914
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Bogdan Voievod"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "85457876",
+     "title": "3-х комнатная квартира, 80 м², Рышкановка, Кишинёв",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1250
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 80
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 970
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "bd. Moscova"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "88162142",
+     "title": "2-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1000
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 58
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "18",
+       "value": 1021
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "20",
+       "value": 972
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Bogdan Petriceicu Hașdeu"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "78503482",
+     "title": "3-х комнатная квартира, 120 м², Центр, Кишинёв",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1300
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 120
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Lev Tolstoi"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "81762020",
+     "title": "3-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 1200
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 130
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 895
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Lev Tolstoi"
+     },
+     "owner": {
+      "login": "prodavec_18"
+     }
+    },
+    {
+     "id": "105270154",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 85000
+      }
+     },
+     "pricePerM2": {
+      "value": 1770
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 48
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 979
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_3"
+     }
+    },
+    {
+     "id": "105334365",
+     "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 106900
+      }
+     },
+     "pricePerM2": {
+      "value": 2138
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 947
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Ialoveni"
+     },
+     "owner": {
+      "login": "prodavec_5"
+     }
+    },
+    {
+     "id": "105018343",
+     "title": "3-х комнатная квартира,  Буюканы,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 119000
+      }
+     },
+     "pricePerM2": {
+      "value": 1586
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 75
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Буюканы",
+       "value": 15666
+      }
+     },
+     "street": {
+      "value": " str. Ion Neculce,"
+     },
+     "owner": {
+      "login": "prodavec_40"
+     }
+    },
+    {
+     "id": "104880812",
+     "title": "3-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:45",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 105000
+      }
+     },
+     "pricePerM2": {
+      "value": 1400
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 75
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1",
+       "value": 918
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Косметический pемонт",
+       "value": 931
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_41"
+     }
+    },
+    {
+     "id": "105393692",
+     "title": "Комната,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 43900
+      }
+     },
+     "pricePerM2": {
+      "value": 2310
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Комната",
+       "value": 908
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 19
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 951
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "str. Sarmizegetusa"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105375348",
+     "title": "2-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 115500
+      }
+     },
+     "pricePerM2": {
+      "value": 2310
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "8",
+       "value": 921
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "bd. Moscova"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105374600",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 119900
+      }
+     },
+     "pricePerM2": {
+      "value": 2551
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 47
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105374475",
+     "title": "2-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 169900
+      }
+     },
+     "pricePerM2": {
+      "value": 2696
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 63
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 947
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "bd. Mircea cel Bătrân"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105373853",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 123900
+      }
+     },
+     "pricePerM2": {
+      "value": 2478
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105353084",
+     "title": "1-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 125500
+      }
+     },
+     "pricePerM2": {
+      "value": 2510
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "8",
+       "value": 921
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "bd. Dacia"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105343757",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 76000
+      }
+     },
+     "pricePerM2": {
+      "value": 1520
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "16",
+       "value": 914
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105343635",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 77900
+      }
+     },
+     "pricePerM2": {
+      "value": 1558
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "16",
+       "value": 914
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105332426",
+     "title": "2-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 189000
+      }
+     },
+     "pricePerM2": {
+      "value": 2661
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 71
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Nicolae Milescu Spatarul"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105332288",
+     "title": "2-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 139000
+      }
+     },
+     "pricePerM2": {
+      "value": 1494
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 93
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 895
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "str. Grenoble"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105316187",
+     "title": "2-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 127900
+      }
+     },
+     "pricePerM2": {
+      "value": 2325
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 55
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Matei Basarab"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105296199",
+     "title": "2-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 79900
+      }
+     },
+     "pricePerM2": {
+      "value": 1775
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 45
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1",
+       "value": 918
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "str. Pandurilor"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105281343",
+     "title": "2-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 130000
+      }
+     },
+     "pricePerM2": {
+      "value": 1460
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 89
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 913
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "16",
+       "value": 914
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Calea Mosilor"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105206022",
+     "title": "3-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 220000
+      }
+     },
+     "pricePerM2": {
+      "value": 2750
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 80
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "13",
+       "value": 958
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 979
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "bd. Decebal"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105202818",
+     "title": "3-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 215000
+      }
+     },
+     "pricePerM2": {
+      "value": 2216
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 97
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 947
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Florilor"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105202524",
+     "title": "2-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 350000
+      }
+     },
+     "pricePerM2": {
+      "value": 4166
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 84
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 913
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 979
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "bd. Ştefan cel Mare şi Sfânt"
+     },
+     "owner": {
+      "login": "prodavec_42"
+     }
+    },
+    {
+     "id": "105236266",
+     "title": "1-комнатная квартира,  Буюканы,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 52
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Kирпичный",
+       "value": 924
+      }
+     },
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Буюканы",
+       "value": 15666
+      }
+     },
+     "street": {
+      "value": "str. Vasile Lupu"
+     },
+     "owner": {
+      "login": "prodavec_43"
+     }
+    },
+    {
+     "id": "105345094",
+     "title": "1-комнатная квартира,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 95000
+      }
+     },
+     "pricePerM2": {
+      "value": 1826
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 52
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 909
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "15",
+       "value": 979
+      }
+     },
+     "buildType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Бетон",
+       "value": 927
+      }
+     },
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Cерый вариант",
+       "value": 949
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Ginta Latină"
+     },
+     "owner": {
+      "login": "prodavec_44"
+     }
+    },
+    {
+     "id": "105387527",
+     "title": "3-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 280000
+      }
+     },
+     "pricePerM2": {
+      "value": 3733
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 75
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "8",
+       "value": 921
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Calea Ieșilor"
+     },
+     "owner": {
+      "login": "prodavec_45"
+     }
+    },
+    {
+     "id": "88368788",
+     "title": "1-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:44",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю посуточно",
+       "value": 903
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_MDL",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_MDL",
+       "value": 800
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 40
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 970
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "16",
+       "value": 914
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "bd. Dacia"
+     },
+     "owner": {
+      "login": "prodavec_46"
+     }
+    },
+    {
+     "id": "105401060",
+     "title": "2-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 450
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 50
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "str. Trandafirilor"
+     },
+     "owner": {
+      "login": "prodavec_47"
+     }
+    },
+    {
+     "id": "85148652",
+     "title": "Комната,  Чокана,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 250
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Комната",
+       "value": 908
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 19
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Чокана",
+       "value": 15669
+      }
+     },
+     "street": {
+      "value": "str. Mihail Sadoveanu"
+     },
+     "owner": {
+      "login": "prodavec_48"
+     }
+    },
+    {
+     "id": "105326371",
+     "title": "3-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 550
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 86
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1",
+       "value": 918
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "12",
+       "value": 954
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Andrei Doga"
+     },
+     "owner": {
+      "login": "prodavec_5"
+     }
+    },
+    {
+     "id": "105255287",
+     "title": "2-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 259900
+      }
+     },
+     "pricePerM2": {
+      "value": 3660
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 71
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 971
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "Str. Ștefan cel Mare"
+     },
+     "owner": {
+      "login": "prodavec_40"
+     }
+    },
+    {
+     "id": "102618781",
+     "title": "1-комнатная квартира,  Телецентр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 37794,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 59960
+      }
+     },
+     "pricePerM2": {
+      "value": 1462
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 41
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 909
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Kомбинированный",
+       "value": 945
+      }
+     },
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Телецентр",
+       "value": 15668
+      }
+     },
+     "street": {
+      "value": "șos. Hâncești"
+     },
+     "owner": {
+      "login": "prodavec_49"
+     }
+    },
+    {
+     "id": "104311392",
+     "title": "3-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 550
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 95
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1",
+       "value": 918
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "str. Independenței"
+     },
+     "owner": {
+      "login": "prodavec_50"
+     }
+    },
+    {
+     "id": "105062752",
+     "title": "2-х комнатная квартира,  Телецентр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 162000
+      }
+     },
+     "pricePerM2": {
+      "value": 2417
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 67
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 948
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Телецентр",
+       "value": 15668
+      }
+     },
+     "street": {
+      "value": "Jubiliara "
+     },
+     "owner": {
+      "login": "prodavec_21"
+     }
+    },
+    {
+     "id": "105163470",
+     "title": "3-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:43",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 324500
+      }
+     },
+     "pricePerM2": {
+      "value": 2285
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 142
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 895
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "7",
+       "value": 971
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Moara Rosie"
+     },
+     "owner": {
+      "login": "prodavec_51"
+     }
+    },
+    {
+     "id": "105401054",
+     "title": "1-комнатная квартира,  Рышкановка,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:42",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 550
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Застройщик",
+       "value": 20364
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 55
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "6",
+       "value": 955
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Рышкановка",
+       "value": 15667
+      }
+     },
+     "street": {
+      "value": "str. Bogdan Voievod"
+     },
+     "owner": {
+      "login": "prodavec_52"
+     }
+    },
+    {
+     "id": "102677842",
+     "title": "2-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:42",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 188000
+      }
+     },
+     "pricePerM2": {
+      "value": 3916
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 48
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "10",
+       "value": 947
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "14",
+       "value": 959
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "Bd. Ștefan cel Mare și Sfânt"
+     },
+     "owner": {
+      "login": "prodavec_4"
+     }
+    },
+    {
+     "id": "104878214",
+     "title": "3-х комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:42",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 215000
+      }
+     },
+     "pricePerM2": {
+      "value": 1837
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3-комнатная квартира",
+       "value": 902
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 117
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 934
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "11",
+       "value": 948
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Белый вариант",
+       "value": 925
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Lev Tolstoi"
+     },
+     "owner": {
+      "login": "prodavec_53"
+     }
+    },
+    {
+     "id": "104789202",
+     "title": "2-х комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:42",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 124900
+      }
+     },
+     "pricePerM2": {
+      "value": 1810
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Агентство",
+       "value": 18894
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 69
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "şos. Munceşti"
+     },
+     "owner": {
+      "login": "prodavec_3"
+     }
+    },
+    {
+     "id": "105401044",
+     "title": "Комната,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:41",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю помесячно",
+       "value": 912
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 300
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Комната",
+       "value": 908
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 22
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "3",
+       "value": 905
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Alexandr Pușkin"
+     },
+     "owner": {
+      "login": "prodavec_54"
+     }
+    },
+    {
+     "id": "105140188",
+     "title": "2-х комнатная квартира,  Телецентр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:41",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 88700
+      }
+     },
+     "pricePerM2": {
+      "value": 2111
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Застройщик",
+       "value": 20364
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 42
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 929
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 910
+      }
+     },
+     "buildType": null,
+     "condition": null,
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Телецентр",
+       "value": 15668
+      }
+     },
+     "street": {
+      "value": "str. Miorița"
+     },
+     "owner": {
+      "login": "prodavec_55"
+     }
+    },
+    {
+     "id": "105400992",
+     "title": "2-комнатная квартира,  Ботаника,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:41",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Продам",
+       "value": 776
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_EUR",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_EUR",
+       "value": 159900
+      }
+     },
+     "pricePerM2": {
+      "value": 2351
+     },
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Застройщик",
+       "value": 20364
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2-комнатная квартира",
+       "value": 894
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 68
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "5",
+       "value": 909
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "9",
+       "value": 896
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Eвроремонт",
+       "value": 916
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Новострой",
+       "value": 19108
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Ботаника",
+       "value": 15665
+      }
+     },
+     "street": {
+      "value": "bd. Dacia"
+     },
+     "owner": {
+      "login": "prodavec_55"
+     }
+    },
+    {
+     "id": "104724105",
+     "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+     "reseted": "2026-09-17 13:41",
+     "offerType": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Сдаю посуточно",
+       "value": 903
+      }
+     },
+     "price": {
+      "value": {
+       "bargain": false,
+       "down_payment": 0,
+       "measurement": "UNIT_MDL",
+       "mode": "PM_FIXED",
+       "unit": "UNIT_MDL",
+       "value": 700
+      }
+     },
+     "pricePerM2": null,
+     "oldPrice": null,
+     "author": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Частное лицо",
+       "value": 18895
+      }
+     },
+     "rooms": {
+      "value": {
+       "abbreviations": {},
+       "translated": "1-комнатная квартира",
+       "value": 893
+      }
+     },
+     "area": {
+      "value": {
+       "unit": "UNIT_METER_SQUARE",
+       "value": 30
+      }
+     },
+     "floor": {
+      "value": {
+       "abbreviations": {},
+       "translated": "2",
+       "value": 935
+      }
+     },
+     "floors": {
+      "value": {
+       "abbreviations": {},
+       "translated": "4",
+       "value": 936
+      }
+     },
+     "buildType": null,
+     "condition": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Косметический pемонт",
+       "value": 931
+      }
+     },
+     "housingFund": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Вторичный",
+       "value": 19109
+      }
+     },
+     "city": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Кишинёв",
+       "value": 13859
+      }
+     },
+     "district": {
+      "value": {
+       "abbreviations": {},
+       "translated": "Центр",
+       "value": 15664
+      }
+     },
+     "street": {
+      "value": "str. Odesa"
+     },
+     "owner": {
+      "login": "prodavec_56"
+     }
+    }
+   ]
+  }
+ }
+}

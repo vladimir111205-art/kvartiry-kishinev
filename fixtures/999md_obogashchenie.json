@@ -1,0 +1,404 @@
+{
+ "105278878": {
+  "id": "105278878",
+  "title": "2-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+  "reseted": "2026-09-17 13:29",
+  "offerType": {
+   "id": 1,
+   "type": "FEATURE_OFFER_TYPE",
+   "value": {
+    "abbreviations": {},
+    "translated": "Сдаю помесячно",
+    "value": 912
+   }
+  },
+  "price": {
+   "id": 2,
+   "type": "FEATURE_PRICE",
+   "value": {
+    "bargain": false,
+    "down_payment": 0,
+    "measurement": "UNIT_EUR",
+    "mode": "PM_FIXED",
+    "unit": "UNIT_EUR",
+    "value": 1100
+   }
+  },
+  "pricePerM2": null,
+  "oldPrice": null,
+  "images": {
+   "id": 14,
+   "type": "FEATURE_IMAGES",
+   "value": [
+    "55c247682d0f0f0710c0c775d7b7237a.jpg",
+    "2a332703b0bf17943eb0d5804c1b3533.jpg",
+    "e25311bc5f7d5a5253f96384878ca032.jpg",
+    "618f6b8911a67dd89f42f5045730d5f9.jpg",
+    "6d729b76f0504dd52b5bc6799b742c00.jpg",
+    "bdad6683dd9e4c605f3468e6e7e6e6e7.jpg",
+    "e494bfa1651da14ecdf45c4bba84634e.jpg",
+    "787a6dc47272fc69ba87c428c7d318f6.jpg",
+    "60a80d4705f9ff488010b3d9da59389c.jpg",
+    "058a27044ff1129fb5faa34df79759b3.jpg"
+   ]
+  },
+  "body": {
+   "id": 13,
+   "type": "FEATURE_BODY",
+   "value": {
+    "ro": "Сдается квартира площадью 70 м2 в жилом комплексе Premium Tower по адресу улица Петричейку Хаждеу\n14 этаж из 20.\n\nДве отдельные спальни.\nКухня и просторная зона living.\nСанузел с ванной и отдельной душевой кабиной.\n\nСовременный эксклюзивный дизайн квартиры.\nКачественная мебель и бытовая техника.\nПродуманная планировка и комфортное жилое пространство.\n\nПарковочное место доступно за отдельную плату.",
+    "ru": "Сдается квартира площадью 70 м2 в жилом комплексе Premium Tower по адресу улица Петричейку Хаждеу\n14 этаж из 20.\n\nДве отдельные спальни.\nКухня и просторная зона living.\nСанузел с ванной и отдельной душевой кабиной.\n\nСовременный эксклюзивный дизайн квартиры.\nКачественная мебель и бытовая техника.\nПродуманная планировка и комфортное жилое пространство.\n\nПарковочное место доступно за отдельную плату.",
+    "translated": "Сдается квартира площадью 70 м2 в жилом комплексе Premium Tower по адресу улица Петричейку Хаждеу\n14 этаж из 20.\n\nДве отдельные спальни.\nКухня и просторная зона living.\nСанузел с ванной и отдельной душевой кабиной.\n\nСовременный эксклюзивный дизайн квартиры.\nКачественная мебель и бытовая техника.\nПродуманная планировка и комфортное жилое пространство.\n\nПарковочное место доступно за отдельную плату."
+   }
+  },
+  "author": {
+   "id": 795,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Агентство",
+    "value": 18894
+   }
+  },
+  "rooms": {
+   "id": 241,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "2-комнатная квартира",
+    "value": 894
+   }
+  },
+  "area": {
+   "id": 244,
+   "type": "FEATURE_INT_UNIT",
+   "value": {
+    "unit": "UNIT_METER_SQUARE",
+    "value": 75
+   }
+  },
+  "floor": {
+   "id": 248,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "14",
+    "value": 913
+   }
+  },
+  "floors": {
+   "id": 249,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "20",
+    "value": 972
+   }
+  },
+  "buildType": null,
+  "condition": null,
+  "housingFund": {
+   "id": 852,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Новострой",
+    "value": 19108
+   }
+  },
+  "city": {
+   "id": 8,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Кишинёв",
+    "value": 13859
+   }
+  },
+  "district": {
+   "id": 9,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Центр",
+    "value": 15664
+   }
+  },
+  "street": {
+   "id": 10,
+   "type": "FEATURE_TEXT",
+   "value": "str. Bogdan Petriceicu Hașdeu"
+  },
+  "owner": {
+   "id": "90c6daf3-7039-4317-abc9-7d8c8af6f2b5",
+   "login": "prodavec_36"
+  }
+ },
+ "104564511": {
+  "id": "104564511",
+  "title": "Комната,  Центр,  Кишинёв,  Кишинёв мун.",
+  "reseted": "2026-09-17 13:29",
+  "offerType": {
+   "id": 1,
+   "type": "FEATURE_OFFER_TYPE",
+   "value": {
+    "abbreviations": {},
+    "translated": "Сдаю помесячно",
+    "value": 912
+   }
+  },
+  "price": {
+   "id": 2,
+   "type": "FEATURE_PRICE",
+   "value": {
+    "bargain": false,
+    "down_payment": 0,
+    "measurement": "UNIT_EUR",
+    "mode": "PM_FIXED",
+    "unit": "UNIT_EUR",
+    "value": 350
+   }
+  },
+  "pricePerM2": null,
+  "oldPrice": null,
+  "images": {
+   "id": 14,
+   "type": "FEATURE_IMAGES",
+   "value": [
+    "48b59ec6a07fe1895541f12b71c29f3f.jpg",
+    "1d4591ef911c6df61faed534d7801bfa.jpg",
+    "941c497d804fe0df2dde20696510f75f.jpg",
+    "49b6b06cfda5ea15de6d3e268b1d0e38.jpg",
+    "bb78739e78a043048408d19224f77975.jpg",
+    "5781a8162d80354de26a40a14e6c5bff.jpg",
+    "af3101d8c63f21f538cd3e4e49cf25b0.jpg"
+   ]
+  },
+  "body": {
+   "id": 13,
+   "type": "FEATURE_BODY",
+   "value": {
+    "ro": "Spre Chirie Garsonieră cu comodități (cămin)\nCentru str.Gheorghe Cașu 20/3\nSuprafața 23m2\nReparație noua\nEtajul 6 din 9\nPreț 350 euro",
+    "ru": "Spre Chirie Garsonieră cu comodități \nCentru str.Gheorghe Cașu 20/3\nSuprafața 23m2\nReparație noua\nEtajul 6 din 9\nPreț 350 euro",
+    "translated": "Spre Chirie Garsonieră cu comodități \nCentru str.Gheorghe Cașu 20/3\nSuprafața 23m2\nReparație noua\nEtajul 6 din 9\nPreț 350 euro"
+   }
+  },
+  "author": {
+   "id": 795,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Агентство",
+    "value": 18894
+   }
+  },
+  "rooms": {
+   "id": 241,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Комната",
+    "value": 908
+   }
+  },
+  "area": {
+   "id": 244,
+   "type": "FEATURE_INT_UNIT",
+   "value": {
+    "unit": "UNIT_METER_SQUARE",
+    "value": 23
+   }
+  },
+  "floor": {
+   "id": 248,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "6",
+    "value": 955
+   }
+  },
+  "floors": {
+   "id": 249,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "9",
+    "value": 896
+   }
+  },
+  "buildType": null,
+  "condition": null,
+  "housingFund": {
+   "id": 852,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Вторичный",
+    "value": 19109
+   }
+  },
+  "city": {
+   "id": 8,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Кишинёв",
+    "value": 13859
+   }
+  },
+  "district": {
+   "id": 9,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Центр",
+    "value": 15664
+   }
+  },
+  "street": {
+   "id": 10,
+   "type": "FEATURE_TEXT",
+   "value": "str. Gheorghe Cașu"
+  },
+  "owner": {
+   "id": "3f6c6b99-69c2-4b75-bf9d-4654b4a867df",
+   "login": "prodavec_37"
+  }
+ },
+ "105383347": {
+  "id": "105383347",
+  "title": "1-комнатная квартира,  Центр,  Кишинёв,  Кишинёв мун.",
+  "reseted": "2026-09-17 13:29",
+  "offerType": {
+   "id": 1,
+   "type": "FEATURE_OFFER_TYPE",
+   "value": {
+    "abbreviations": {},
+    "translated": "Сдаю помесячно",
+    "value": 912
+   }
+  },
+  "price": {
+   "id": 2,
+   "type": "FEATURE_PRICE",
+   "value": {
+    "bargain": false,
+    "down_payment": 0,
+    "measurement": "UNIT_EUR",
+    "mode": "PM_FIXED",
+    "unit": "UNIT_EUR",
+    "value": 410
+   }
+  },
+  "pricePerM2": null,
+  "oldPrice": null,
+  "images": {
+   "id": 14,
+   "type": "FEATURE_IMAGES",
+   "value": [
+    "31e2b5b968c76e02f784c3b66e5513c4.jpg",
+    "29683c1684d95674f32c71b862e55d55.jpg",
+    "76410f5ff9d19d0a7c48abc1615f4fd7.jpg",
+    "33e3c2569fbf9ffc93f530a0dd6f923f.jpg",
+    "ea754aaa6b946c3c4309f0874a4e7046.jpg",
+    "df57cbeb4a3c3417ad64bb2e668c5e11.jpg",
+    "fbe1a8e15e1ec88f57aae394bfcb3e88.jpg",
+    "63590c1a953a66028af2c19bc7d89648.jpg",
+    "c20e9b253be26fb69ed0c3d5e882373f.jpg",
+    "504a0da60c856a40a598e7b1880c5291.jpg"
+   ]
+  },
+  "body": {
+   "id": 13,
+   "type": "FEATURE_BODY",
+   "value": {
+    "ro": "Apartamentul este închiriat de Proprietar, nu de agenție.\n\nSe închiriază apartament pe termen lung, Izmail/Kantemir, etaj 2 din 9, renovare europeană, mobilat, utilat, avans 2 luni, rog intermediarii să nu deranjeze. 410 euro pe lună\n(cheltuielile comunale se plătesc separat)\n\nApartamentul se închiriază începând cu 1 octombrie 2026.\n\nFĂRĂ ANIMALE DE COMPANIE\nNU SE ÎNCHIRIAZĂ CETĂȚENILOR STRĂINI\n\nIntermediarilor și agențiilor nu sunați",
+    "ru": "Квартиру сдает Собственник, не агентство.\n\nСдается квартира на долгосрочный период, Измаил/Кантемира, 2/9 эт, евроремонт, мебель, техника, предоплата 2 месяца, посредников прошу не беспокоить. 410 евро в месяц\n( коммунальные платежи оплачиваются отдельно )\n\nКвартира сдается с 1 октября 2026 г.\n\nБЕЗ ЖИВОТНЫХ\nИНОСТРАННЫМ ГРАЖДАНАМ НЕ СДАЕМ\n\nПосредникам и агентствам не звонить",
+    "translated": "Квартиру сдает Собственник, не агентство.\n\nСдается квартира на долгосрочный период, Измаил/Кантемира, 2/9 эт, евроремонт, мебель, техника, предоплата 2 месяца, посредников прошу не беспокоить. 410 евро в месяц\n( коммунальные платежи оплачиваются отдельно )\n\nКвартира сдается с 1 октября 2026 г.\n\nБЕЗ ЖИВОТНЫХ\nИНОСТРАННЫМ ГРАЖДАНАМ НЕ СДАЕМ\n\nПосредникам и агентствам не звонить"
+   }
+  },
+  "author": {
+   "id": 795,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Застройщик",
+    "value": 20364
+   }
+  },
+  "rooms": {
+   "id": 241,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "1-комнатная квартира",
+    "value": 893
+   }
+  },
+  "area": {
+   "id": 244,
+   "type": "FEATURE_INT_UNIT",
+   "value": {
+    "unit": "UNIT_METER_SQUARE",
+    "value": 43
+   }
+  },
+  "floor": {
+   "id": 248,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "2",
+    "value": 935
+   }
+  },
+  "floors": {
+   "id": 249,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "9",
+    "value": 896
+   }
+  },
+  "buildType": null,
+  "condition": null,
+  "housingFund": {
+   "id": 852,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Вторичный",
+    "value": 19109
+   }
+  },
+  "city": {
+   "id": 8,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Кишинёв",
+    "value": 13859
+   }
+  },
+  "district": {
+   "id": 9,
+   "type": "FEATURE_OPTIONS",
+   "value": {
+    "abbreviations": {},
+    "translated": "Центр",
+    "value": 15664
+   }
+  },
+  "street": {
+   "id": 10,
+   "type": "FEATURE_TEXT",
+   "value": "str. Ismail"
+  },
+  "owner": {
+   "id": "7d32841c-330c-4b82-8cfe-fda70143b10b",
+   "login": "prodavec_38"
+  }
+ }
+}
