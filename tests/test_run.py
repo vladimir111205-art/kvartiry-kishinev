@@ -154,3 +154,127 @@ def test_novoe_i_snizhenie_ceny_uhodyat_v_obshchuyu_lentu():
             [PROFIL_VSEM], {}, {})
     con.commit()
     assert con.execute("SELECT COUNT(*) AS n FROM ochered").fetchone()["n"] == 2
+
+
+# --- ночь: цепочка не гаснет, но папу не будит ------------------------------
+
+def test_nochnoy_progon_kopit_ochered_a_dnevnoy_otpravlyaet(monkeypatch):
+    """Замер 27.09-01.10: расписание GitHub будило цепочку в 14:00 вместо
+    08:00, и 70% карточек приходили папе с опозданием на часы. Теперь ночью
+    цепочка собирает рынок и копит очередь, а первый дневной прогон шлёт."""
+    monkeypatch.setattr(config, "chat_poluchatelya", lambda kto: "1")
+    run.odin_progon("proba")   # холодный старт
+
+    con = db.connect()
+    oid = db.zapisat(con, karta_dlya_ocheredi())["obyavlenie_id"]
+    db.v_ochered(con, oid, "двушки папе", db.POVOD_NOVOE, db.POVOD_NOVOE)
+    con.commit()
+    con.close()
+
+    noch = run.odin_progon("proba", otpravlyat=False)
+    assert noch["otpravleno"] == 0
+    assert noch["zhdet_utra"] >= 1
+
+    utro = run.odin_progon("proba")
+    assert utro["otpravleno"] >= 1
+
+
+class FalshivoeVremya:
+    """time.time и time.sleep, которые двигают часы без ожидания."""
+
+    def __init__(self):
+        self.t = 1_000_000.0
+
+    def time(self):
+        return self.t
+
+    def sleep(self, sek):
+        self.t += max(sek, 1)
+
+
+def test_cikl_nochyu_ne_vyhodit_i_ne_shlet(monkeypatch):
+    from datetime import datetime as dt
+    import run as r
+
+    class Noch(dt):
+        @classmethod
+        def now(cls, tz=None):
+            return dt(2026, 10, 2, 3, 0, tzinfo=tz)
+
+    vyzovy = []
+    vremya = FalshivoeVremya()
+    monkeypatch.setattr(r, "datetime", Noch)
+    monkeypatch.setattr(r.time, "time", vremya.time)
+    monkeypatch.setattr(r.time, "sleep", vremya.sleep)
+    monkeypatch.setattr(r, "odin_progon", lambda rezhim, bystro=False, otpravlyat=True:
+                        vyzovy.append((bystro, otpravlyat)) or {"status": "ok"})
+
+    r.cikl(60, "boy")
+    # 60 минут ночью: весь рынок раз в 20 минут, верхушку не гоняем, не шлём
+    assert len(vyzovy) == 3
+    assert all(not bystro and not otpravlyat for bystro, otpravlyat in vyzovy)
+
+
+def test_cikl_dnem_shlet(monkeypatch):
+    from datetime import datetime as dt
+    import run as r
+
+    class Den(dt):
+        @classmethod
+        def now(cls, tz=None):
+            return dt(2026, 10, 2, 9, 0, tzinfo=tz)
+
+    vyzovy = []
+    vremya = FalshivoeVremya()
+    monkeypatch.setattr(r, "datetime", Den)
+    monkeypatch.setattr(r.time, "time", vremya.time)
+    monkeypatch.setattr(r.time, "sleep", vremya.sleep)
+    monkeypatch.setattr(r, "odin_progon", lambda rezhim, bystro=False, otpravlyat=True:
+                        vyzovy.append((bystro, otpravlyat)) or {"status": "ok"})
+
+    r.cikl(5, "boy")
+    assert vyzovy[0] == (False, True)          # первым - весь рынок
+    assert all(otpravlyat for _, otpravlyat in vyzovy)
+    assert any(bystro for bystro, _ in vyzovy)  # дальше верхушка
+
+
+def test_holodnyy_start_nochyu_ne_budit_papu(monkeypatch):
+    poslano = []
+    monkeypatch.setattr(run, "tihiy_progrev", lambda *a, **k: poslano.append(1))
+    itog = run.odin_progon("proba", otpravlyat=False)
+    assert itog["status"] == "holodnyy_start"
+    assert poslano == []
+
+
+# --- бот пишет только папе (решение Владимира 01.10.2026) -------------------
+
+def test_poluchatel_tolko_papa(monkeypatch):
+    monkeypatch.setattr(config, "chat_papy", lambda obyazatelno=False: "PAPA")
+    monkeypatch.setattr(config, "chat_vladimira", lambda obyazatelno=False: "VOVA")
+    assert config.chat_poluchatelya("papa") == "PAPA"
+    assert config.chat_poluchatelya("vladimir") == ""
+    assert config.chat_poluchatelya("") == ""
+
+
+def test_alert_ne_uhodit_v_telegram(monkeypatch):
+    import zdorovie
+
+    class Bot:
+        def tekst(self, *a, **k):
+            raise AssertionError("алерт ушёл в Telegram")
+
+    monkeypatch.setattr(config, "chat_vladimira", lambda obyazatelno=False: "VOVA")
+    zdorovie.alert(Bot(), "проверка")
+
+
+def test_profil_ne_dlya_papy_ne_proydet_validaciyu(tmp_path):
+    import filtry
+    f = tmp_path / "f.yaml"
+    f.write_text(
+        "versiya: 1\nsbor: {gorod: kishinev, sdelki: [prodazha], komnat: [2]}\n"
+        "rynok: {okno_dney: 90, minimum_obektov: 15, porog_deshevle: 25}\n"
+        "profili:\n  - imya: x\n    aktiven: true\n    poluchatel: vladimir\n"
+        "    pravila:\n      - {pole: sdelka, op: ravno, znachenie: prodazha}\n",
+        encoding="utf-8")
+    with pytest.raises(filtry.OshibkaKonfiga):
+        filtry.zagruzit(f)

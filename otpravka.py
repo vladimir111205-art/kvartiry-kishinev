@@ -92,7 +92,7 @@ def razgruzit_ochered(con, bot, mediany: dict, profili_po_imeni: dict) -> dict:
         karta["otklonenie_ot_rynka"] = rynok.otklonenie(karta, mediany)
         profil = profili_po_imeni.get(zapis["profil"])
         chat = config.chat_poluchatelya(
-            (profil or {}).get("poluchatel", "vladimir"))
+            (profil or {}).get("poluchatel", ""))
         if not chat:
             db.otmetit_otpravlennym(con, zapis["id"], "нет получателя")
             continue
@@ -103,6 +103,9 @@ def razgruzit_ochered(con, bot, mediany: dict, profili_po_imeni: dict) -> dict:
                 v_izbrannom=bool(zapis["prioritet"] > 0))
             db.otmetit_otpravlennym(con, zapis["id"], r.get("message_id"))
             itog["otpravleno"] += 1
+            # Для проверки «первым ли»: что ушло и когда объявление подняли.
+            print(f"[отправка] папе: {karta.get('url')} {zapis['povod']} "
+                  f"(подняли на 999.md {karta.get('podnyato_at') or '?'})", flush=True)
         except ZablokirovalBota as e:
             print(f"[отправка] остановлена: {e}")
             itog["ostanovleno"] = True
@@ -132,7 +135,7 @@ def _daydzhest(con, bot, mediany, profili_po_imeni, zapisi) -> int:
             continue
         karta["otklonenie_ot_rynka"] = rynok.otklonenie(karta, mediany)
         profil = profili_po_imeni.get(zapis["profil"]) or {}
-        chat = config.chat_poluchatelya(profil.get("poluchatel", "vladimir"))
+        chat = config.chat_poluchatelya(profil.get("poluchatel", ""))
         if chat:
             po_chatam.setdefault(chat, []).append(
                 (zapis, karta, rynok.mediana_gruppy(karta, mediany)))

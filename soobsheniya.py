@@ -109,10 +109,14 @@ def stroka_rynka(karta: dict, gruppa: dict) -> str:
     объектам она посчитана, - это цифра без веса, а решение по ней о деньгах.
     """
     otkl = karta.get("otklonenie_ot_rynka") or 0
-    if not gruppa or not gruppa.get("mediana") or otkl < 1:
+    # «на 4% дешевле» - шум, разброс цен внутри сектора больше. Строку
+    # показываем от 10%, ниже карточка просто без оценки.
+    if not gruppa or not gruppa.get("mediana") or otkl < 10:
         return ""
     znak = "🔥" if otkl >= 20 else "👀"
-    return (f"{znak} на {otkl:.0f}% дешевле рынка "
+    s_chem = ("таких же без отделки" if karta.get("sostoyanie") in ("chernovaya", "belaya")
+              else "таких же с ремонтом и вторички")
+    return (f"{znak} на {otkl:.0f}% дешевле {s_chem} "
             f"(медиана {chislo(gruppa['mediana'], '€/м²')} "
             f"по {gruppa['obektov']} объектам)")
 

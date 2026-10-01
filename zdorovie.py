@@ -14,17 +14,11 @@ import db
 
 
 def alert(bot, tekst: str) -> None:
-    """Алерт уходит Владимиру - батя технических сообщений не поймёт и
-    только испугается (правило `ne-pisat-v-gruppu-ot-bota-analitiki`)."""
-    chat = config.chat_vladimira(obyazatelno=False)
-    if not chat:
-        print(f"[zdorovie] АЛЕРТ (некому слать, нет VLADIMIR_CHAT_ID): {tekst}")
-        return
-    try:
-        bot.tekst(chat, f"⚠️ Агент 19 (квартиры Кишинёв)\n\n{tekst}")
-    except Exception as e:
-        print(f"[zdorovie] алерт не ушёл: {str(e)[:150]}")
-    print(f"[zdorovie] АЛЕРТ: {tekst}")
+    """Алерт только в лог Actions. Бот пишет одному человеку - папе
+    (решение Владимира 01.10.2026), а технические сообщения папа не поймёт и
+    испугается. Поломку видно по красному прогону: GitHub сам присылает
+    владельцу репозитория письмо о падении workflow."""
+    print(f"[zdorovie] АЛЕРТ: {tekst}", flush=True)
 
 
 def proverit_tihiy_nol(con, bot, naydeno: int, holodnyy_start: bool) -> bool:

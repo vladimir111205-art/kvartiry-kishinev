@@ -28,43 +28,60 @@ def _mediana(znacheniya: list) -> float:
     return round(statistics.median(znacheniya), 2)
 
 
+BEZ_OTDELKI = {"chernovaya", "belaya"}
+
+
+def segment(sostoyanie) -> str:
+    """Без отделки или готовая.
+
+    Проверка на живом рынке 01.10.2026: новостройки застройщика в черновом
+    варианте (1 000-1 300 €/м²) сравнивались со всем сектором, где большинство
+    с ремонтом (~1 900 €/м²), и 10 из 13 карточек уходили папе с «🔥 на 40%
+    дешевле рынка». Это обычная цена застройщика, не находка. Теперь бетон
+    сравниваем с бетоном, ремонт с ремонтом.
+    """
+    return "bez_otdelki" if (sostoyanie or "") in BEZ_OTDELKI else "gotovaya"
+
+
 def gruppa(karta: dict) -> tuple:
-    """Ключ сравнения: город + сектор + комнатность.
+    """Ключ сравнения: город + сектор + комнатность + отделка.
 
     Город в ключе не для красоты: у села Колоница тоже есть сектор «Центр», и
     без города его квартиры по 300 €/м² смешаются с центром Кишинёва по
     2000 €/м². Медиана станет средним по больнице, а объекты Кишинёва начнут
     выглядеть «дороже рынка».
     """
-    return (karta.get("gorod"), karta.get("sektor"), karta.get("komnat"))
+    return (karta.get("gorod"), karta.get("sektor"), karta.get("komnat"),
+            segment(karta.get("sostoyanie")))
 
 
 def sobrat_mediany(con, okno_dney: int = 90, minimum: int = 15,
                    sdelka: str = "prodazha") -> dict:
-    """{(gorod, sektor, komnat): {'mediana': €/м², 'obektov': N}}.
+    """{(gorod, sektor, komnat, segment): {'mediana': €/м², 'obektov': N}}.
 
     Аренда в расчёт продажи не идёт: 500 €/мес и 50 000 € - величины из разных
     миров, и смешать их значит получить бессмысленное число.
     """
     stroki = con.execute(
-        "SELECT gorod, sektor, komnat, cena_eur_za_m2 FROM obyavleniya "
+        "SELECT gorod, sektor, komnat, sostoyanie, cena_eur_za_m2 FROM obyavleniya "
         "WHERE sdelka = ? AND aktivno = 1 AND gorod != '' AND sektor != '' AND komnat > 0 "
+        "AND prodavec != 'zastroyshchik' "
         "AND cena_eur_za_m2 > 0 AND dannye_nadezhny = 1 "
         "AND podnyato_at >= date('now', ?)",
         (sdelka, f"-{int(okno_dney)} day")).fetchall()
 
     po_gruppam = {}
     for r in stroki:
-        po_gruppam.setdefault((r["gorod"], r["sektor"], r["komnat"]), []).append(
+        po_gruppam.setdefault(gruppa(dict(r)), []).append(
             r["cena_eur_za_m2"])
 
     out = {}
-    for gruppa, ceny in po_gruppam.items():
+    for klyuch, ceny in po_gruppam.items():
         if len(ceny) < minimum:
             # Выборка мала - группы просто нет. Вызывающий код увидит отсутствие
             # и не поставит метку, вместо того чтобы посчитать «примерно».
             continue
-        out[gruppa] = {"mediana": _mediana(ceny), "obektov": len(ceny)}
+        out[klyuch] = {"mediana": _mediana(ceny), "obektov": len(ceny)}
     return out
 
 
@@ -80,6 +97,12 @@ def otklonenie(karta: dict, mediany: dict) -> float:
     # Объявление с опечаткой в площади не сравниваем с рынком: именно такие
     # дают «дешевле на 99%» и встают первыми в списке.
     if not karta.get("dannye_nadezhny", 1):
+        return 0.0
+    # Застройщик продаёт по прайсу десятки одинаковых квартир в строящемся
+    # доме: это не ошибка продавца, на которой можно выиграть. 01.10.2026 ЖК
+    # METROPOLIS уходил папе с «🔥 на 38% дешевле» пачкой. Из медиан
+    # застройщики тоже исключены - их прайс занижал рынок бетона.
+    if karta.get("prodavec") == "zastroyshchik":
         return 0.0
     g = mediany.get(gruppa(karta))
     if not g or not g["mediana"]:

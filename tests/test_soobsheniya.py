@@ -87,7 +87,7 @@ def test_stroka_rynka_molchit_bez_mediany():
 
 def test_stroka_rynka_pokazyvaet_razmer_vyborki():
     t = s.stroka_rynka(karta(otklonenie_ot_rynka=22), GRUPPA)
-    assert "на 22% дешевле рынка" in t
+    assert "на 22% дешевле" in t
     assert "1 210 €/м²" in t
     assert "340 объектам" in t
 

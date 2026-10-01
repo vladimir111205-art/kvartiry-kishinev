@@ -55,10 +55,14 @@ MAX_OTPRAVOK_V_DEN = int(os.getenv("KVARTIRY_MAX_V_DEN", "25"))
 # Цикл внутри одного запуска GitHub Actions. Расписание GitHub пропускает
 # запуски (замер 17-27.09: 3-5 прогонов в день вместо 45), поэтому бот сам
 # держит цикл: свежая верхушка ленты раз в минуту, весь рынок раз в 20 минут.
-CIKL_PAUZA_SEK = int(os.getenv("KVARTIRY_CIKL_PAUZA", "60"))
-CIKL_POLNYY_SEK = int(os.getenv("KVARTIRY_CIKL_POLNYY", "1200"))
+# 01.10.2026 ускорено ради «первым»: верхушка раз в 30 с (~2 с на запрос),
+# весь рынок раз в 5 минут (~20 с) - снижение цены без подъёма объявления
+# видно только при полном обходе. Ночью полный обход раз в 20 минут.
+CIKL_PAUZA_SEK = int(os.getenv("KVARTIRY_CIKL_PAUZA", "30"))
+CIKL_POLNYY_SEK = int(os.getenv("KVARTIRY_CIKL_POLNYY", "300"))
+CIKL_POLNYY_NOCH_SEK = int(os.getenv("KVARTIRY_CIKL_POLNYY_NOCH", "1200"))
 BYSTRO_OBYAVLENIY = int(os.getenv("KVARTIRY_BYSTRO_OBYAVLENIY", "500"))
-CHAS_S, CHAS_DO = 8, 22   # по Кишинёву; ночью не смотрим и не шлём
+CHAS_S, CHAS_DO = 9, 22   # по Кишинёву; ночью смотрим, но не шлём - копим до 09:00
 
 POROG_DAYDZHESTA = int(os.getenv("KVARTIRY_POROG_DAYDZHESTA", "6"))
 # Telegram режет подпись к фото на 1024 символах.
@@ -130,5 +134,8 @@ def chat_vladimira(obyazatelno: bool = False) -> str:
 
 
 def chat_poluchatelya(imya: str) -> str:
-    """Имя получателя из filtry.yaml -> chat_id."""
-    return {"papa": chat_papy, "vladimir": chat_vladimira}.get(imya, lambda: "")()
+    """Имя получателя из filtry.yaml -> chat_id.
+
+    Получатель один - папа. Решение Владимира 01.10.2026: «он должен только
+    папе отправлять». Любое другое имя даёт пустой chat, и отправка не идёт."""
+    return chat_papy() if imya == "papa" else ""

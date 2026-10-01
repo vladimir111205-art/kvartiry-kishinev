@@ -156,9 +156,9 @@ def proverit(konf: dict) -> dict:
         if imya in imena:
             raise OshibkaKonfiga(f"{gde}: имя повторяется, имена должны быть уникальны")
         imena.add(imya)
-        if pr.get("poluchatel") not in ("papa", "vladimir"):
+        if pr.get("poluchatel") != "papa":
             raise OshibkaKonfiga(
-                f"{gde}: poluchatel должен быть papa или vladimir, "
+                f"{gde}: бот пишет только папе, poluchatel должен быть papa, "
                 f"пришло {pr.get('poluchatel')!r}")
         pravila = pr.get("pravila")
         if not isinstance(pravila, list) or not pravila:

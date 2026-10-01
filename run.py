@@ -13,8 +13,10 @@
 
     python run.py                запуск на живых данных, реальная отправка
     python run.py --rezhim proba запуск на фикстурах, наружу не шлёт ничего
-    python run.py --cikl 55      цикл на 55 минут: верхушка ленты раз в минуту,
-                                 весь рынок раз в 20 минут (так крутится в Actions)
+    python run.py --cikl 55      цикл на 55 минут: верхушка ленты раз в 30 с,
+                                 весь рынок раз в 5 минут (так крутится в Actions).
+                                 Ночью только весь рынок раз в 20 минут и без
+                                 отправки: всё ночное уходит папе в 09:00
 """
 from __future__ import annotations
 
@@ -183,10 +185,14 @@ def tihiy_progrev(con, bot, istochnik, active_profiles: list, mediany: dict) -> 
     con.commit()
 
 
-def odin_progon(rezhim: str = "boy", bystro: bool = False) -> dict:
+def odin_progon(rezhim: str = "boy", bystro: bool = False,
+                otpravlyat: bool = True) -> dict:
     """bystro=True - смотрим только свежую верхушку ленты (новые и поднятые
     за последние минуты). Снятых с продажи в этом режиме не отмечаем: кто не
-    попал в верхушку, не пропал, а просто ниже в списке."""
+    попал в верхушку, не пропал, а просто ниже в списке.
+
+    otpravlyat=False - ночной прогон: события копятся в очереди и уходят
+    первым дневным прогоном в 09:00, папу ночью не будим."""
     con = db.connect()
     proba = rezhim == "proba"
     istochnik = FiktivnyIstochnik() if proba else Devyat999()
@@ -242,7 +248,13 @@ def odin_progon(rezhim: str = "boy", bystro: bool = False) -> dict:
     if holodnyy_start:
         # Транспорт в --rezhim proba фиктивный (см. FiktivnyTransport), поэтому
         # тихий прогрев безопасно гонять и в пробном режиме - наружу это не шлёт.
-        tihiy_progrev(con, bot, istochnik, active_profiles, mediany)
+        if otpravlyat:
+            tihiy_progrev(con, bot, istochnik, active_profiles, mediany)
+        else:
+            # Кэш потерялся ночью: базу набираем молча, приветствие папе
+            # в 3 часа ночи не шлём.
+            db.pometit_vsyo_otpravlennym(con, "tihiy_progrev")
+            con.commit()
         db.zakonchit_progon(con, progon_id, naydeno=len(syrye), status="ok")
         con.close()
         return {"status": "holodnyy_start", "naydeno": len(syrye)}
@@ -250,7 +262,11 @@ def odin_progon(rezhim: str = "boy", bystro: bool = False) -> dict:
     doobogatit_i_ochered(con, istochnik, sobytiya, active_profiles, mediany, k_eur)
 
     profili_po_imeni = {p["imya"]: p for p in active_profiles}
-    itog_otpravki = otpravka.razgruzit_ochered(con, bot, mediany, profili_po_imeni)
+    if otpravlyat:
+        itog_otpravki = otpravka.razgruzit_ochered(con, bot, mediany, profili_po_imeni)
+    else:
+        itog_otpravki = {"otpravleno": 0, "ne_ushlo": 0, "ostanovleno": False,
+                         "zhdet_utra": db.ochered_zhdet(con)}
 
     db.zakonchit_progon(
         con, progon_id, naydeno=len(syrye),
@@ -264,11 +280,17 @@ def odin_progon(rezhim: str = "boy", bystro: bool = False) -> dict:
 
 
 def cikl(minut: int, rezhim: str = "boy") -> int:
-    """Держать цикл minut минут, но не дольше CHAS_DO по Кишинёву.
+    """Держать цикл minut минут, круглосуточно.
 
-    Первый заход и дальше раз в CIKL_POLNYY_SEK - весь рынок (медианы, снижения
-    цены без подъёма, снятые). Между ними раз в CIKL_PAUZA_SEK - только верхушка
-    ленты: новый объект уходит папе через 1-2 минуты после публикации.
+    День (CHAS_S-CHAS_DO по Кишинёву): первый заход и дальше раз в
+    CIKL_POLNYY_SEK - весь рынок (медианы, снижения цены без подъёма, снятые),
+    между ними раз в CIKL_PAUZA_SEK - только верхушка ленты: новый объект
+    уходит папе через 1-2 минуты после публикации.
+
+    Ночь: только весь рынок раз в CIKL_POLNYY_NOCH_SEK и без отправки. Цепочка не
+    гаснет, поэтому утром её не надо будить расписанием GitHub - а оно
+    опаздывало на 6 часов (замер 27.09-01.10: первый прогон в 14:00 вместо
+    08:00 каждый день). Всё, что вышло за ночь, уходит папе в 09:00.
     Возвращает код выхода: 1 только если прогоны падали подряд до конца цикла.
     """
     tz = ZoneInfo("Europe/Chisinau")
@@ -276,26 +298,32 @@ def cikl(minut: int, rezhim: str = "boy") -> int:
     posledniy_polnyy = 0.0
     padeniy_podryad = 0
     while time.time() < konec:
-        chas = datetime.now(tz).hour
-        if not (config.CHAS_S <= chas < config.CHAS_DO):
-            print(f"[cikl] {chas}:00 по Кишинёву - ночь, выхожу")
-            break
         t0 = time.time()
-        polnyy = t0 - posledniy_polnyy >= config.CIKL_POLNYY_SEK
+        chas = datetime.now(tz).hour
+        den = config.CHAS_S <= chas < config.CHAS_DO
+        polnyy = t0 - posledniy_polnyy >= (
+            config.CIKL_POLNYY_SEK if den else config.CIKL_POLNYY_NOCH_SEK)
+        if not den and not polnyy:
+            time.sleep(config.CIKL_PAUZA_SEK)
+            continue
         try:
-            itog = odin_progon(rezhim, bystro=not polnyy)
+            itog = odin_progon(rezhim, bystro=not polnyy, otpravlyat=den)
         except Exception as e:
             itog = {"status": f"isklyuchenie {type(e).__name__}: {str(e)[:200]}"}
         ok = itog.get("status") in ("ok", "tihiy_nol", "holodnyy_start")
         padeniy_podryad = 0 if ok else padeniy_podryad + 1
         if polnyy and ok:
             posledniy_polnyy = t0
-        print(f"[cikl] {datetime.now(tz):%H:%M:%S} "
-              f"{'весь рынок' if polnyy else 'верхушка'}: {itog}", flush=True)
+        rezhim_progona = "весь рынок" if polnyy else "верхушка"
+        if not den:
+            rezhim_progona += " (ночь, без отправки)"
+        print(f"[cikl] {datetime.now(tz):%H:%M:%S} {rezhim_progona}: {itog}",
+              flush=True)
         if rezhim == "proba":
             break
         time.sleep(max(0.0, config.CIKL_PAUZA_SEK - (time.time() - t0)))
     return 1 if padeniy_podryad >= 3 else 0
+
 
 
 if __name__ == "__main__":

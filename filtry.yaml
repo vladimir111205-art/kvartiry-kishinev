@@ -64,16 +64,3 @@ profili:
     myagkie:
       - {pole: otklonenie_ot_rynka, op: ne_menshe, znachenie: 15, metka: "дешевле рынка"}
       - {pole: prodavec,            op: ravno,     znachenie: sobstvennik, metka: "собственник"}
-
-  # Тестовый профиль на время настройки. Выключен: папа подключён 17.09.2026,
-  # карточки идут ему. Чат Владимира остаётся только под технические алерты
-  # о поломках - папе такие сообщения не нужны, он их не поймёт и испугается.
-  - imya: "проверка владимиру"
-    aktiven: false
-    poluchatel: vladimir
-    istochniki: [999md]
-    pravila:
-      - {pole: sdelka,   op: ravno,    znachenie: prodazha}
-      - {pole: gorod,    op: ravno,    znachenie: kishinev}
-      - {pole: dannye_nadezhny, op: ravno, znachenie: 1}
-      - {pole: cena_eur, op: mezhdu,   znachenie: [20000, 150000]}

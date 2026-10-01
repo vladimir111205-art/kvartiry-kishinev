@@ -246,5 +246,5 @@ def test_otpravlennaya_kartochka_neset_metku_rynka(con, monkeypatch):
     kart["otklonenie_ot_rynka"] = rynok.otklonenie(kart, m)
     otpravka.otpravit_kartochku(b, "42", kart, m, profil)
     tekst = str(t.vyzovy[0][1])
-    assert "дешевле рынка" in tekst
+    assert "дешевле" in tekst
     assert "объектам" in tekst

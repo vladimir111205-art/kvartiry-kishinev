@@ -22,14 +22,14 @@ def con(tmp_path):
 
 
 def zalit(con, sektor, komnat, za_m2_spisok, sdelka="prodazha", dney_nazad=0,
-          gorod="kishinev"):
+          gorod="kishinev", sostoyanie=""):
     for i, za_m2 in enumerate(za_m2_spisok):
         k = normalizacia.pustaya()
         k.update({
-            "istochnik": "999md", "vneshniy_id": f"{gorod}-{sektor}-{komnat}-{i}-{sdelka}",
+            "istochnik": "999md", "vneshniy_id": f"{gorod}-{sektor}-{komnat}-{i}-{sdelka}-{sostoyanie}",
             "sdelka": sdelka, "gorod": gorod, "sektor": sektor, "komnat": komnat,
             "ploshad_m2": 60, "cena_eur": za_m2 * 60, "cena_eur_za_m2": za_m2,
-            "valyuta": "EUR",
+            "valyuta": "EUR", "sostoyanie": sostoyanie,
         })
         # Через privesti, как в бою: иначе карточка не получит dannye_nadezhny
         # и тест будет проверять не тот путь, которым идут настоящие данные.
@@ -43,14 +43,14 @@ def zalit(con, sektor, komnat, za_m2_spisok, sdelka="prodazha", dney_nazad=0,
 def test_mediana_schitaetsya_kogda_vyborki_hvataet(con):
     zalit(con, "botanika", 2, list(range(1000, 1020)))    # 20 объектов
     m = rynok.sobrat_mediany(con, minimum=15)
-    assert ("kishinev", "botanika", 2) in m
-    assert m[("kishinev", "botanika", 2)]["obektov"] == 20
-    assert 1009 <= m[("kishinev", "botanika", 2)]["mediana"] <= 1010
+    assert ("kishinev", "botanika", 2, "gotovaya") in m
+    assert m[("kishinev", "botanika", 2, "gotovaya")]["obektov"] == 20
+    assert 1009 <= m[("kishinev", "botanika", 2, "gotovaya")]["mediana"] <= 1010
 
 
 def test_malaya_vyborka_ne_daet_mediany(con):
     zalit(con, "chekany", 3, [1000] * 14)                 # 14 < 15
-    assert ("kishinev", "chekany", 3) not in rynok.sobrat_mediany(con, minimum=15)
+    assert ("kishinev", "chekany", 3, "gotovaya") not in rynok.sobrat_mediany(con, minimum=15)
 
 
 def test_metka_ne_stavitsya_poka_baza_melkaya(con):
@@ -65,7 +65,7 @@ def test_odna_dorogaya_kvartira_ne_sdvigaet_ocenku_sektora(con):
     """Медиана, а не среднее: пентхаус за 500 000 € не должен портить сектор."""
     zalit(con, "centr", 2, [1000] * 19 + [20000])
     m = rynok.sobrat_mediany(con, minimum=15)
-    assert m[("kishinev", "centr", 2)]["mediana"] == 1000
+    assert m[("kishinev", "centr", 2, "gotovaya")]["mediana"] == 1000
 
 
 def test_otklonenie_schitaetsya_v_procentah(con):
@@ -89,8 +89,8 @@ def test_gruppy_ne_smeshivayutsya_po_komnatnosti(con):
     zalit(con, "botanika", 1, [2000] * 20)
     zalit(con, "botanika", 2, [1000] * 20)
     m = rynok.sobrat_mediany(con, minimum=15)
-    assert m[("kishinev", "botanika", 1)]["mediana"] == 2000
-    assert m[("kishinev", "botanika", 2)]["mediana"] == 1000
+    assert m[("kishinev", "botanika", 1, "gotovaya")]["mediana"] == 2000
+    assert m[("kishinev", "botanika", 2, "gotovaya")]["mediana"] == 1000
 
 
 def test_arenda_ne_meshaetsya_v_medianu_prodazhi(con):
@@ -98,8 +98,8 @@ def test_arenda_ne_meshaetsya_v_medianu_prodazhi(con):
     zalit(con, "botanika", 2, [1000] * 20, sdelka="prodazha")
     zalit(con, "botanika", 2, [8] * 20, sdelka="arenda")
     m = rynok.sobrat_mediany(con, minimum=15, sdelka="prodazha")
-    assert m[("kishinev", "botanika", 2)]["mediana"] == 1000
-    assert m[("kishinev", "botanika", 2)]["obektov"] == 20
+    assert m[("kishinev", "botanika", 2, "gotovaya")]["mediana"] == 1000
+    assert m[("kishinev", "botanika", 2, "gotovaya")]["obektov"] == 20
 
 
 def test_staroe_ne_uchastvuet_v_okne(con):
@@ -121,8 +121,8 @@ def test_selo_municipiya_ne_smeshivaetsya_s_gorodom(con):
     zalit(con, "centr", 2, [2000] * 20, gorod="kishinev")
     zalit(con, "centr", 2, [800] * 20, gorod="kolonica")
     m = rynok.sobrat_mediany(con, minimum=15)
-    assert m[("kishinev", "centr", 2)]["mediana"] == 2000
-    assert m[("kolonica", "centr", 2)]["mediana"] == 800
+    assert m[("kishinev", "centr", 2, "gotovaya")]["mediana"] == 2000
+    assert m[("kolonica", "centr", 2, "gotovaya")]["mediana"] == 800
     # Квартира Кишинёва сравнивается с Кишинёвом, а не со средним по муниципию.
     kishinevskaya = {"gorod": "kishinev", "sektor": "centr", "komnat": 2,
                      "cena_eur_za_m2": 2000, "dannye_nadezhny": 1}
@@ -173,3 +173,39 @@ def test_dvizhenie_mediany_za_nedelyu(con):
 def test_dvizhenie_molchit_na_maloy_vyborke(con):
     zalit(con, "botanika", 2, [1000] * 5)
     assert rynok.dvizhenie_mediany(con, "botanika", 2, minimum=15) == {}
+
+
+def test_novostroy_bez_otdelki_ne_sravnivaetsya_s_remontom(con):
+    """Живой рынок 01.10.2026: бетон от застройщика по 1 025 €/м² уходил
+    папе как «🔥 на 45% дешевле рынка», потому что сравнивался с квартирами
+    с ремонтом по 1 860. Это обычная цена застройщика, не находка."""
+    zalit(con, "botanika", 2, [1860] * 30)
+    zalit(con, "botanika", 2, [1000, 1050, 1100] * 10, sostoyanie="chernovaya")
+    m = rynok.sobrat_mediany(con, minimum=15)
+    beton = {"gorod": "kishinev", "sektor": "botanika", "komnat": 2,
+             "sostoyanie": "chernovaya", "cena_eur_za_m2": 1025}
+    assert rynok.otklonenie(beton, m) < 15          # не «дешевле рынка»
+    remont = {"gorod": "kishinev", "sektor": "botanika", "komnat": 2,
+              "sostoyanie": "evroremont", "cena_eur_za_m2": 1300}
+    assert rynok.otklonenie(remont, m) > 25         # а вот это находка
+
+
+def test_zastroyshchik_ne_poluchaet_metku_i_ne_portit_medianu(con):
+    zalit(con, "botanika", 2, [1650] * 20, sostoyanie="chernovaya")
+    m_do = rynok.sobrat_mediany(con, minimum=15)
+    for i in range(40):
+        k = normalizacia.pustaya()
+        k.update({"istochnik": "999md", "vneshniy_id": f"metropolis-{i}",
+                  "sdelka": "prodazha", "gorod": "kishinev", "sektor": "botanika",
+                  "komnat": 2, "ploshad_m2": 60, "cena_eur": 61500,
+                  "cena_eur_za_m2": 1025, "valyuta": "EUR",
+                  "sostoyanie": "chernovaya", "prodavec": "zastroyshchik"})
+        db.zapisat(con, normalizacia.privesti(k))
+    con.execute("UPDATE obyavleniya SET podnyato_at = date('now') WHERE podnyato_at = ''")
+    con.commit()
+    m = rynok.sobrat_mediany(con, minimum=15)
+    assert m == m_do
+    metropolis = {"gorod": "kishinev", "sektor": "botanika", "komnat": 2,
+                  "sostoyanie": "chernovaya", "prodavec": "zastroyshchik",
+                  "cena_eur_za_m2": 1025}
+    assert rynok.otklonenie(metropolis, m) == 0.0

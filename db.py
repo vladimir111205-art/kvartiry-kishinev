@@ -309,6 +309,12 @@ def klyuch_sobytiya(povod: str, cena_eur: float) -> str:
     return povod
 
 
+def ochered_zhdet(con) -> int:
+    """Сколько записей ждут отправки (ночью копятся до 08:00)."""
+    return con.execute(
+        "SELECT COUNT(*) AS n FROM ochered WHERE sostoyanie = 'zhdet'").fetchone()["n"]
+
+
 def ochered_k_otpravke(con, potolok_progona: int = None, potolok_dnya: int = None) -> list:
     """Что отправлять в этом прогоне.
 
